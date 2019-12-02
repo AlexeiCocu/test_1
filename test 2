@@ -1,0 +1,26 @@
+CREATE TABLE test2 (
+   id INTEGER not null,
+   name TEXT
+   
+ );
+ 
+ INSERT INTO test2 (id, name)
+ values (1, 'Alex');
+ 
+ INSERT INTO test2 (id, name)
+ values (2, 'Ion');
+ 
+ INSERT INTO test2 (id, name) 
+ VALUES (2, 'Ion'); 
+
+ INSERT INTO test2 (id, name) 
+ VALUES (4, 'Lena');
+
+ INSERT INTO test2 (id, name) 
+ VALUES (4, 'Lena');
+
+ select *
+ from test2
+ Group BY id
+ HAVING COUNT(*)>1
+ ;
